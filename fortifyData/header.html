@@ -1,0 +1,101 @@
+<header>
+    <div id="wrapper-navbar">
+        <nav class="navbar navbar-light bg-white fixed-top navbar-expand-xl">
+            <div class="container">
+                <a href="#" class="navbar-brand custom-logo-link" rel="home"><img src="IMG/Group_20-1-300x86.png" class="img-fluid" /></a>
+                <div class="menu-btn-group">
+                    <div class="menu-toggle"></div>
+                    <div class="search-icon"></div>
+                </div>
+                <!-- END MENU-BTN-GROUP -->
+                <div id="navbarNavDropdown" class="collapse navbar-collapse">
+                    <ul id="main-menu" class="navbar-nav ml-auto">
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item current_page_item nav-item">
+                            <a title="Home" href="index.php" class="nav-link active">Home</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item">
+                            <a title="Platform" href="#" class="nav-link">Platform</a></li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown nav-item">
+                            <a title="Solutions" href="solution.php" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-499">Solutions</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li id="menu-item-1135" class="menu-item menu-item-type-custom menu-item-object-custom nav-item">
+                                    <a title="Features" href="#" class="dropdown-item">Features</a></li>
+                                <li id="menu-item-504" class="menu-item menu-item-type-post_type menu-item-object-page nav-item">
+                                    <a title="Packages" href="#" class="dropdown-item">Packages</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item">
+                            <a title="Customers" href="customer.php" class="nav-link">Customers</a></li>
+                        <!-- Compliance Of Thinh -->
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown nav-item">
+                            <a title="Compliance" href="compliance.php" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-499">Compliance</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li id="menu-item-1135" class="menu-item menu-item-type-custom menu-item-object-custom nav-item">
+                                    <a title="Compliance Detail" href="compliance-detail.php" class="dropdown-item">Compliance Detail</a></li>
+                            </ul>
+                        </li>
+                        <!-- End Compliance Of Thinh-->
+                        <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item">
+                            <a title="Partners" href="#" class="nav-link">Partners</a></li>
+                        <li class="post-type-news menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children dropdown nav-item">
+                            <a title="About Us" href="about-us.php" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle nav-link" id="menu-item-dropdown-764">About
+                                Us</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="menu-item menu-item-type-post_type menu-item-object-page nav-item">
+                                    <a title="Contact Us" href="contact.php" class="dropdown-item">Contact Us</a></li>
+                                <li class="post-type-news menu-item menu-item-type-post_type menu-item-object-page nav-item">
+                                    <a title="News" href="#" class="dropdown-item">News</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="menu-item nav-item menu-icon-search"> <a title="Home" href="#" class="nav-link"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        <li class="menu-item nav-item menu-login"> <a href="#" target="_blank" class="btn-bg-red" title="Login">Login</a></li>
+                    </ul>
+                </div>
+                <!-- END NAVBAR NAV DROPDOWN -->
+            </div>
+        </nav>
+        <!-- END NAVBAR -->
+        <div class="clearfix"></div>
+    </div>
+    <!-- END WRAPPER-NAVBAR -->
+    <div class="wrap-search-form">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="column-8">
+                    <div id="ic-close-searchform" class="icon-close">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </div>
+                    <form method="get" id="cus-searchform" role="search">
+                        <label class="sr-only" for="s">Search</label>
+                        <div class="text-field"> <input class="field form-control" id="s" name="s" type="text" placeholder="Search &hellip;" value=""></div> <input class="submit btn btn-primary" id="searchsubmit" name="submit" type="submit" value="Search">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END WRAP-SEARCH-FORM -->
+</header>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('.menu-toggle').click(function() {
+            $('.menu-toggle').toggleClass('active')
+            $('.navbar-collapse').toggleClass('active')
+            $('.wrap-search-form').toggleClass('inactive')
+        })
+
+        $('.search-icon').click(function() {
+            $('.navbar-collapse').toggleClass('inactive')
+            $('.search-icon').toggleClass('active')
+            $('.wrap-search-form').toggleClass('active')
+            $('.icon-close').toggleClass('active')
+
+        })
+
+        $('.icon-close').click(function() {
+            $('.icon-close').toggleClass('active')
+            $('.wrap-search-form').toggleClass('active')
+        })
+    })
+</script>
